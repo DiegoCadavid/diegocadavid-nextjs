@@ -7,7 +7,7 @@ const HomeAboutDesktop = ({}: Props) => {
       {/* ux / ui + content */}
       <div className="relative | text-primary-500 | flex flex-col gap-6 ">
         <h2 className="uppercaseas tracking-wider">UI/UX</h2>
-        <div className="absolute -inset-8 lg:-bottom-52 xl:-bottom-44 -z-10 | px-8 lg:pt-36 xl:pt-40 | text-lg font-normal | bg-black ">
+        <div className="absolute -inset-8 lg:-bottom-52 xl:-bottom-44 -z-10 | p-8 | text-lg font-normal | flex flex-col justify-end |  bg-black ">
           <h3 className="uppercase font-medium">About me</h3>
           <p className="text-base ">
             I'm Diego, i have 5 year of eperience in the web development, i have
