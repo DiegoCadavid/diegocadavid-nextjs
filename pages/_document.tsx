@@ -15,7 +15,7 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body className="bg-primary-500 font-primary overflow-y-scroll">
+      <body className="bg-primary-500">
         <Main />
         <NextScript />
       </body>
