@@ -12,7 +12,7 @@ const NavLink = ({ name, path }: Props) => {
 
   return (
     <Link
-      className={`group relative flex w-32 items-center justify-center overflow-hidden rounded-full border-2 border-black py-2 text-center hover:text-white ${
+      className={`cursor-pointer group relative flex w-32 items-center justify-center overflow-hidden rounded-full border-2 border-black py-2 text-center hover:text-white ${
         isActive && "text-white"
       }`}
       href={path}>

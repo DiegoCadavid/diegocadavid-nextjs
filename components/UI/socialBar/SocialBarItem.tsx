@@ -2,7 +2,7 @@ interface Props {}
 
 const SocialBarItem = ({}: Props) => {
   return (
-    <div className="flex items-center justify-center border-2 border-black rounded-full cursor-pointer h-9 w-9 group hover:bg-black ">
+    <div className="flex items-center justify-center border-2 border-black rounded-full cursor-pointer h-9 w-9 group bg-primary-500 hover:bg-black">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
