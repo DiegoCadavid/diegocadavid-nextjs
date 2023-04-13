@@ -7,6 +7,7 @@ const Index = ({}: Props) => {
   return (
     <Layout>
       <HomeHero />
+
     </Layout>
   );
 };

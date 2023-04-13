@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 
 interface Props {}
 
-type pointerState = "default" | "big" ;
+type pointerState = "default" | "big";
 
 const Cursor = ({}: Props) => {
   const [pointer, setPointer] = useState<pointerState>("default");
@@ -14,14 +14,13 @@ const Cursor = ({}: Props) => {
         return;
       }
 
-      // Set position
       const pointerSize: number = pointerRef.current?.clientWidth ?? 0;
 
       const pointerPosX = e.clientX - pointerSize / 2;
       const pointerPosY = e.clientY - pointerSize / 2;
 
-      const screenWidth = window.innerWidth;
-      const screenHeight = window.innerHeight;
+      const screenWidth = document.body.clientWidth;
+      const screenHeight = document.body.clientHeight > window.innerHeight ?  document.body.clientHeight : window.innerHeight ;
 
       if (pointerPosX > 0 && pointerPosX < screenWidth - pointerSize) {
         pointerRef.current!.style.left = `${pointerPosX}px`;
@@ -60,12 +59,13 @@ const Cursor = ({}: Props) => {
   return (
     <div
       ref={pointerRef}
-      className={`pointer-events-none absolute z-50 h-fit w-fit mix-blend-difference transition-position duration-[50ms] ease-linear`}>
+      className={`pointer-events-none fixed z-50 hidden h-fit w-fit mix-blend-difference transition-position duration-[50ms] ease-linear md:block`}>
       <div
-        className={`aspect-square rounded-full  ring-2 ring-primary-500 transition-size duration-200  ease-out
+        className={`aspect-square rounded-full ring-2 ring-primary-500 transition-size duration-200  ease-out
         ${pointer === "default" && "h-4"}
         ${pointer === "big" && "h-8 bg-primary-500"}
         `}></div>
+        
     </div>
   );
 };

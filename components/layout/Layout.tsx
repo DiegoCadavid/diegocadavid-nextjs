@@ -1,16 +1,43 @@
+import { useEffect, useState } from "react";
+import { scrollContext } from "../../context/scrollContext";
 import Cursor from "../UI/Cursor";
-import Navbar from "../navbar/Navbar";
+import Navbar from "../UI/navbar/Navbar";
+import SocialBar from "../UI/socialBar/SocialBar";
 
 interface Props {
   children: React.ReactNode;
 }
 
 const Layout = ({ children }: Props) => {
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleScroll = (e: Event) => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
-      <Cursor />
-      <Navbar />
-      {children}
+      <scrollContext.Provider
+        value={{
+          isScrolled,
+        }}>
+        <Cursor />
+        <Navbar />
+        {children}
+        <SocialBar />
+      </scrollContext.Provider>
     </div>
   );
 };
