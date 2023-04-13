@@ -65,7 +65,7 @@ const HomeHero = ({}: Props) => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="btn-icon">
+            className="btn-icon ">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -82,7 +82,7 @@ const HomeHero = ({}: Props) => {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="h-6 w-6 mx-auto mt-16 animate-bounce">
+        className="h-6 w-6 mx-auto mt-16 animate-bounce cursor-pointer">
         <path
           strokeLinecap="round"
           strokeLinejoin="round"

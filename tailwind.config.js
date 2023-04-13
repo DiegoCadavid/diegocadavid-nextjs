@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -16,8 +17,8 @@ module.exports = {
           600: "#b4b4b4",
           700: "#878787",
           800: "#5a5a5a",
-          900: "#2d2d2d"
-},
+          900: "#2d2d2d",
+        },
       },
       fontFamily: {
         primary: ["Inter", "sans-serif"],
@@ -26,7 +27,11 @@ module.exports = {
         desktop: "1366px",
       },
       height: {
-        "viewport-desktop" : "calc( 100vh - 60px )"
+        "viewport-desktop": "calc( 100vh - 60px )",
+      },
+      transitionProperty :{
+        position: "top, left, right, bottom",
+        size: "width, height"
       }
     },
     container: {

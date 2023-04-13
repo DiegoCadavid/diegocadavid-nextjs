@@ -1,3 +1,4 @@
+import Cursor from "../UI/Cursor";
 import Navbar from "../navbar/Navbar";
 
 interface Props {
@@ -7,6 +8,7 @@ interface Props {
 const Layout = ({ children }: Props) => {
   return (
     <div>
+      <Cursor />
       <Navbar />
       {children}
     </div>
