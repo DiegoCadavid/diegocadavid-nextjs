@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { useEffect, useRef, useState } from "react";
 
 interface Props {}
@@ -34,10 +35,7 @@ const Cursor = ({}: Props) => {
       }
 
       const target: HTMLElement = e.target as HTMLElement;
-      const cursorStyle: string =
-        window.getComputedStyle(target)["cursor"] == "auto"
-          ? "default"
-          : window.getComputedStyle(target)["cursor"];
+      const cursorStyle: string = target.classList.contains("pointer") ? "pointer" : "";
 
       switch (cursorStyle) {
         case "pointer":
@@ -62,9 +60,7 @@ const Cursor = ({}: Props) => {
   return (
     <div
       ref={pointerRef}
-      className={`pointer-events-none fixed z-50 hidden h-fit w-fit mix-blend-difference transition-position ease-out md:block
-        ${pointer === "big" && "duration-[50ms]"}
-      `}>
+      className={ clsx("pointer-events-none fixed z-50 hidden h-fit w-fit mix-blend-difference  md:block") }>
       <div
         className={`aspect-square w-2 rounded-full ring-2 ring-primary-500 transition-transform  ease-out
         ${pointer === "big" && "scale-[2] bg-primary-500"}

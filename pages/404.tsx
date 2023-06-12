@@ -5,14 +5,14 @@ interface Props {}
 
 const Error = ({}: Props) => {
   return (
-    <Layout>
-      <div className="flex flex-col items-center justify-center gap-8 mt-72">
+    <Layout hiddenNavbar={true}>
+      <div className=" min-h-screen flex flex-col items-center justify-center gap-8">
         <div className="text-center">
           <p className="font-bold text-8xl">404</p>
           <p className="font-medium">no found</p>
         </div>
 
-        <Link href="/" className="btn btn-outline">
+        <Link href="/" className="btn btn-outline pointer">
           Home
           <svg
             xmlns="http://www.w3.org/2000/svg"

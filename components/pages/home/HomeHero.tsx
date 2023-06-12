@@ -6,21 +6,21 @@ const HomeHero = ({}: Props) => {
   return (
     <div>
       <div className="container mt-4 lg:mt-28 lg:pb-36">
-        <p className="text-2xl text-center uppercase lg:text-4xl">I'm</p>
-        <h2 className="text-4xl font-bold text-center lg:text-8xl">
+        <p className="text-center text-2xl uppercase lg:text-4xl">I'm</p>
+        <h2 className="text-center text-4xl font-bold lg:text-8xl">
           Fullstack Developer
         </h2>
-        <div className="flex items-start justify-center gap-2 mt-1 lg:mt-8 lg:gap-10">
+        <div className="mt-1 flex items-start justify-center gap-2 lg:mt-8 lg:gap-10">
           <span className="text-4xl font-bold lg:text-8xl">&</span>
           <div className="relative hidden lg:block">
-            <h2 className="font-bold uppercase text-8xl text-primary-500">
+            <h2 className="text-8xl font-bold uppercase text-primary-500">
               ui/ux
             </h2>
             <div className="absolute -inset-5 -top-2 -z-10 h-fit rounded-lg bg-black p-6 pt-[45%] text-primary-500">
               <p>
-                <span className="font-bold">+4 years </span>
-                development and desing sites using tecnologies like React,
-                Nextjs, tailwindCSS, Nodejs, Express...
+                <span className="font-bold">+2 years </span>
+                developing software using technologies such as React, Nextjs,
+                Tailwind, Nodejs, ExpressJS
               </p>
             </div>
           </div>
@@ -29,11 +29,6 @@ const HomeHero = ({}: Props) => {
           </h2>
           <h2 className="text-4xl font-bold lg:text-8xl">Designer</h2>
         </div>
-        <p className="mt-6 text-center lg:hidden">
-          <span className="font-bold">+4 years </span>
-          desarrollando y diseñando sitios web usando tecnologias como React,
-          Nextjs, Tailwind, nodejs, Express...
-        </p>{" "}
       </div>
 
       {/* Divide */}
@@ -41,7 +36,7 @@ const HomeHero = ({}: Props) => {
 
       {/* Links */}
       <div className="flex justify-center gap-4">
-        <Link className="btn" href="#">
+        <Link className="btn pointer" href="#">
           Contact
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +52,7 @@ const HomeHero = ({}: Props) => {
             />
           </svg>
         </Link>
-        <Link className="btn btn-outline" href="#">
+        <Link className="btn btn-outline pointer" href="#">
           CV
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +60,7 @@ const HomeHero = ({}: Props) => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="btn-icon ">
+            className="btn-icon">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -76,19 +71,23 @@ const HomeHero = ({}: Props) => {
       </div>
 
       {/* Scroll button */}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6 mx-auto mt-16 cursor-pointer animate-bounce">
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
-        />
-      </svg> 
+      <div className="mt-16 flex justify-center">
+        <div className="pointer inline-block p-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="pointer-events-none h-6 w-6 animate-bounce">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </div>
+      </div>
     </div>
   );
 };

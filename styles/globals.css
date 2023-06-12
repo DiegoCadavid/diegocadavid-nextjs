@@ -5,14 +5,13 @@
 @layer components {
   /* Buttons */
   .btn {
-    @apply cursor-pointer;
     @apply py-2;
     @apply w-[150px];
     @apply flex justify-center gap-2;
 
     @apply items-center font-medium text-center text-white;
     @apply bg-black hover:bg-zinc-800;
-    @apply border-2 border-black rounded-full hover:border-zinc-800;
+    @apply border-2 border-black rounded-full hover:border-black;
 
     @apply transition-colors ease-in;
   }
@@ -24,9 +23,16 @@
   }
 
   .btn-icon {
-    @apply w-4 h-4;
+    @apply w-4 h-4 pointer-events-none;
   }
 }
 
 @layer base {
+  * {
+    @apply cursor-none;
+  }
+
+  body {
+    @apply bg-primary-500 ;
+  };
 }

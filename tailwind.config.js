@@ -9,16 +9,16 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          100: "#f9f9f9",
-          200: "#f3f3f3",
-          300: "#ededed",
-          400: "#e7e7e7",
-          500: "#e1e1e1",
-          600: "#b4b4b4",
-          700: "#878787",
-          800: "#5a5a5a",
-          900: "#2d2d2d",
-        },
+          100: "#fdfcfe",
+          200: "#fbfafd",
+          300: "#f9f7fc",
+          400: "#f7f5fb",
+          500: "#f5f2fa",
+          600: "#c4c2c8",
+          700: "#939196",
+          800: "#626164",
+          900: "#313032"
+},
       },
       fontFamily: {
         primary: ["Inter", "sans-serif"],

@@ -6,9 +6,10 @@ import SocialBar from "../UI/socialBar/SocialBar";
 
 interface Props {
   children: React.ReactNode;
+  hiddenNavbar?: boolean
 }
 
-const Layout = ({ children }: Props) => {
+const Layout = ({ children, hiddenNavbar }: Props) => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
   useEffect(() => {
@@ -34,7 +35,7 @@ const Layout = ({ children }: Props) => {
           isScrolled,
         }}>
         <Cursor />
-        <Navbar />
+        { !hiddenNavbar && <Navbar />}
         {children}
         <SocialBar />
       </scrollContext.Provider>
