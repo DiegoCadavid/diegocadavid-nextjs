@@ -8,6 +8,8 @@ const Index = ({}: Props) => {
     <Layout>
       <HomeHero />
 
+      
+
     </Layout>
   );
 };

@@ -63,7 +63,7 @@ const Cursor = ({}: Props) => {
       className={ clsx("pointer-events-none fixed z-50 hidden h-fit w-fit mix-blend-difference  md:block") }>
       <div
         className={`aspect-square w-2 rounded-full ring-2 ring-primary-500 transition-transform  ease-out
-        ${pointer === "big" && "scale-[2] bg-primary-500"}
+        ${pointer === "big" && "scale-[2.5] bg-primary-500"}
         `}></div>
     </div>
   );

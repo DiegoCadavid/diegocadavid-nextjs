@@ -18,7 +18,7 @@ module.exports = {
           700: "#939196",
           800: "#626164",
           900: "#313032"
-},
+        },
       },
       fontFamily: {
         primary: ["Inter", "sans-serif"],
@@ -29,7 +29,7 @@ module.exports = {
       height: {
         "viewport-desktop": "calc( 100vh - 60px )",
       },
-      transitionProperty :{
+      transitionProperty: {
         position: "top, left, right, bottom",
         size: "width, height"
       }
@@ -41,7 +41,7 @@ module.exports = {
         DEFAULT: "1rem",
         sm: "1.5rem",
         lg: "2rem",
-      },
+      }
     },
   },
   plugins: [],

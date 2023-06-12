@@ -29,6 +29,11 @@ const HomeHero = ({}: Props) => {
           </h2>
           <h2 className="text-4xl font-bold lg:text-8xl">Designer</h2>
         </div>
+        <p className="mt-6 text-center lg:hidden">
+          <span className="font-bold">+2 years </span>
+          developing software using technologies such as React, Nextjs,
+          Tailwind, Nodejs, ExpressJS
+        </p>{" "}
       </div>
 
       {/* Divide */}
