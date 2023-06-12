@@ -4,12 +4,12 @@ interface Props {}
 
 const HomeHero = ({}: Props) => {
   return (
-    <div>
+    <div className="">
       <div className="container mt-4 lg:mt-28 lg:pb-36">
         <p className="text-center text-2xl uppercase lg:text-4xl">I'm</p>
-        <h2 className="text-center text-4xl font-bold lg:text-8xl">
+        <h1 className="text-center text-4xl font-bold lg:text-8xl">
           Fullstack Developer
-        </h2>
+        </h1>
         <div className="mt-1 flex items-start justify-center gap-2 lg:mt-8 lg:gap-10">
           <span className="text-4xl font-bold lg:text-8xl">&</span>
           <div className="relative hidden lg:block">
@@ -24,9 +24,9 @@ const HomeHero = ({}: Props) => {
               </p>
             </div>
           </div>
-          <h2 className="block text-4xl font-bold lg:hidden lg:text-8xl">
+          <h1 className="block text-4xl font-bold lg:hidden lg:text-8xl">
             UI/UX
-          </h2>
+          </h1>
           <h2 className="text-4xl font-bold lg:text-8xl">Designer</h2>
         </div>
         <p className="mt-6 text-center lg:hidden">
@@ -76,7 +76,7 @@ const HomeHero = ({}: Props) => {
       </div>
 
       {/* Scroll button */}
-      <div className="mt-16 flex justify-center">
+      <div className="mt-16  justify-center md:flex hidden">
         <div className="pointer inline-block p-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"

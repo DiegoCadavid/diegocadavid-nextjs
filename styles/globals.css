@@ -25,11 +25,19 @@
   .btn-icon {
     @apply w-4 h-4 pointer-events-none;
   }
+
+  /* Text style */
+  .heading-1 {
+    @apply md:text-4xl text-2xl; 
+    @apply font-bold; 
+    @apply uppercase; 
+  }
 }
 
 @layer base {
   * {
     @apply cursor-none;
+    @apply font-primary;
   }
 
   body {
