@@ -14,7 +14,7 @@ const HomeHeroAboutMe = () => {
 const HomeHero = ({}: Props) => {
   return (
     <div className="">
-      <div className="container mt-4 lg:mt-28 lg:pb-36">
+      <div className="container mt-16 lg:mt-28 lg:pb-36">
         <p className="text-center text-2xl uppercase lg:text-4xl">I'm</p>
         <h1 className="text-center text-4xl font-bold lg:text-8xl">
           Fullstack Developer
@@ -44,7 +44,7 @@ const HomeHero = ({}: Props) => {
 
       {/* Links */}
       <div className="flex justify-center gap-4">
-        <Link className="btn pointer" href="#">
+        <Link className="btn pointer w-[150px]" href="#">
           Contact
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ const HomeHero = ({}: Props) => {
             />
           </svg>
         </Link>
-        <Link className="btn btn-outline pointer" href="#">
+        <Link className="btn btn-outline pointer w-[150px]" href="#">
           CV
           <svg
             xmlns="http://www.w3.org/2000/svg"
