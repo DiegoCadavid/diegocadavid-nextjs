@@ -32,6 +32,10 @@ module.exports = {
       transitionProperty: {
         position: "top, left, right, bottom",
         size: "width, height"
+      },
+      minHeight: {
+        view: "calc(100vh - 72px)"
+
       }
     },
     container: {

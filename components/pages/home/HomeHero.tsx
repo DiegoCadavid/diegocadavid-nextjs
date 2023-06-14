@@ -13,16 +13,16 @@ const HomeHeroAboutMe = () => {
 
 const HomeHero = ({}: Props) => {
   return (
-    <div className="">
-      <div className="container mt-16 lg:mt-28 lg:pb-36">
-        <p className="text-center text-2xl uppercase lg:text-4xl">I'm</p>
-        <h1 className="text-center text-4xl font-bold lg:text-8xl">
+    <div className="flex-col justify-center mt-12 lg:flex lg:min-h-view">
+      <div className="container lg:pb-36">
+        <p className="text-2xl text-center uppercase lg:text-4xl">I'm</p>
+        <h1 className="text-4xl font-bold text-center lg:text-8xl">
           Fullstack Developer
         </h1>
-        <div className="mt-1 flex items-start justify-center gap-2 lg:mt-8 lg:gap-10">
+        <div className="flex items-start justify-center gap-2 mt-1 lg:mt-8 lg:gap-10">
           <span className="text-4xl font-bold lg:text-8xl">&</span>
           <div className="relative hidden lg:block">
-            <h2 className="text-8xl font-bold uppercase text-primary-500">
+            <h2 className="font-bold uppercase text-8xl text-primary-500">
               ui/ux
             </h2>
             <div className="absolute -inset-5 -top-2 -z-10 h-fit rounded-2xl bg-black p-6 pt-[45%] text-primary-500">
@@ -79,15 +79,15 @@ const HomeHero = ({}: Props) => {
       </div>
 
       {/* Scroll button */}
-      <div className="mt-16  hidden justify-center md:flex">
-        <div className="pointer inline-block p-2">
+      <div className="justify-center hidden mt-16 md:flex">
+        <div className="inline-block p-2 pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="pointer-events-none h-6 w-6 animate-bounce">
+            className="w-6 h-6 pointer-events-none animate-bounce">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
