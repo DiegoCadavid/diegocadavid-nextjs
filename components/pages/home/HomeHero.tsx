@@ -2,6 +2,15 @@ import Link from "next/link";
 
 interface Props {}
 
+const HomeHeroAboutMe = () => {
+  return (
+    <p>
+      <span className="font-bold">i'm Diego Cadavid</span>, Fullstack Developer
+      and UI/UX Designer using technologies like React, NextJS, TailwindCSS...
+    </p>
+  );
+};
+
 const HomeHero = ({}: Props) => {
   return (
     <div className="">
@@ -16,12 +25,8 @@ const HomeHero = ({}: Props) => {
             <h2 className="text-8xl font-bold uppercase text-primary-500">
               ui/ux
             </h2>
-            <div className="absolute -inset-5 -top-2 -z-10 h-fit rounded-lg bg-black p-6 pt-[45%] text-primary-500">
-              <p>
-                <span className="font-bold">+2 years </span>
-                developing software using technologies such as React, Nextjs,
-                Tailwind, Nodejs, ExpressJS
-              </p>
+            <div className="absolute -inset-5 -top-2 -z-10 h-fit rounded-2xl bg-black p-6 pt-[45%] text-primary-500">
+              <HomeHeroAboutMe />
             </div>
           </div>
           <h1 className="block text-4xl font-bold lg:hidden lg:text-8xl">
@@ -29,11 +34,9 @@ const HomeHero = ({}: Props) => {
           </h1>
           <h2 className="text-4xl font-bold lg:text-8xl">Designer</h2>
         </div>
-        <p className="mt-6 text-center lg:hidden">
-          <span className="font-bold">+2 years </span>
-          developing software using technologies such as React, Nextjs,
-          Tailwind, Nodejs, ExpressJS
-        </p>{" "}
+        <div className="mt-6 text-center lg:hidden">
+          <HomeHeroAboutMe />
+        </div>{" "}
       </div>
 
       {/* Divide */}
@@ -76,7 +79,7 @@ const HomeHero = ({}: Props) => {
       </div>
 
       {/* Scroll button */}
-      <div className="mt-16  justify-center md:flex hidden">
+      <div className="mt-16  hidden justify-center md:flex">
         <div className="pointer inline-block p-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
