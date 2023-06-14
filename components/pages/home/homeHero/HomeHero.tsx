@@ -76,7 +76,7 @@ const HomeHero = ({}: Props) => {
       </div>
 
       {/* Scroll button */}
-      <div className="justify-center hidden mt-16 md:flex">
+      <div className="justify-center hidden mt-16 lg:flex">
         <div className="inline-block p-2 pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
