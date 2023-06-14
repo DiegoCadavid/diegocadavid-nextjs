@@ -39,11 +39,8 @@ const HomeHero = ({}: Props) => {
         </div>{" "}
       </div>
 
-      {/* Divide */}
-      <div className="mx-auto mb-8 mt-8 h-0.5 w-[120px] bg-black lg:mt-20"></div>
-
       {/* Links */}
-      <div className="flex justify-center gap-4">
+      <div className="flex justify-center gap-4 mt-8">
         <Link className="btn pointer w-[150px]" href="#">
           Contact
           <svg
