@@ -4,7 +4,7 @@ interface Props {}
 
 const SocialBar = ({}: Props) => {
   return (
-    <div className="fixed bottom-0 flex flex-col items-center justify-end gap-2 right-9">
+    <div className="fixed bottom-0 md:flex flex-col items-center justify-end gap-2 right-9 hidden">
       <SocialBarItem />
       <SocialBarItem />
       <SocialBarItem />

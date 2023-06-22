@@ -4,7 +4,7 @@ interface Props {}
 
 const HomeTecnologies = ({}: Props) => {
   return (
-    <div className="container flex flex-col items-center mt-24">
+    <div className="container flex flex-col items-center mt-16 lg:mt-24">
       <h2 className="text-center heading-1">Tecnologias</h2>
       <p className="max-w-2xl mt-2 text-center ">
         Como desarrollador FullStack mis areas de especializacion incluyen
