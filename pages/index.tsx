@@ -28,6 +28,8 @@ const Index = ({}: Props) => {
             The new portfolio will be available soon and I apologize to the new
             people who aspired to see this portfolio finished.
           </p>
+
+          <p className="mt-2"> You can see the final desing of this portafolio <a className="underline font-bold"  href="https://www.figma.com/file/xIHsQQL9eHntfx3W5boKwf/Portafolio-v3?type=design&node-id=0%3A1&mode=design&t=UaL2tMlJOuPQTZmr-1">here</a></p>
         </div>
       </div>
     </Layout>
