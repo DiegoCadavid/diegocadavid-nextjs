@@ -36,6 +36,10 @@ module.exports = {
       minHeight: {
         view: "calc(100vh - 72px)"
 
+      },
+      gridTemplateColumns: {
+        "tecnologies" : "repeat(8, minmax(0, 1fr))",
+        "tecnologies-mobile" : "repeat(4, minmax(0, 1fr))"
       }
     },
     container: {
