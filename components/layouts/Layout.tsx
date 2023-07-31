@@ -26,7 +26,7 @@ const Layout = ({ children }: Props) => {
           <h1 className="text-xl font-bold dark:text-zinc-300">DiegoCadavid</h1>
           <p className="mt-2 ">✨ NextJS Frontend | 🤖 C#/Nodejs Backend</p>
           <p className="mt-2">
-            I am student of Colombia. I really love create cool sites and copy
+            I am student of Colombia. I really love create cool sites and clone
             big sites like Pinterest, Twitter, Spotify and more!
           </p>
         </div>

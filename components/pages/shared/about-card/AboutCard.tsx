@@ -12,12 +12,12 @@ const AboutCard = ({}: Props) => {
       <div className="p-4 ">
         <h2 className="mb-2 font-bold">About me</h2>
         <p>
-          I am student of Colombia, I start coding with 11 years old. I really
-          love create cool sites and copy big sites like Pinterest, Twitter,
+          I am student of Colombia, Fullstack Developer, I really
+          love create cool sites and clone big sites like Pinterest, Twitter,
           Spotify and more!{" "}
         </p>
         <p className="mt-2">
-          I'm have 16 years old now, i love the anime/games (waited for Blue
+          I'm have 16 years old now, i like the anime/games (waited for Blue
           Protocol Global)
         </p>
 
