@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "image": "https://pictures-omega.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdd4p0ksdu%2Fimage%2Fupload%2Fv1690775206%2Foudqapgmdp5who8oq9rj.png&w=1920&q=75",
+      "name": "Picture",
+      "description": "Picture is a clone of the big Social Pinterest, Created using t3-app",
+      "tags": [
+        "typescript",
+        "react",
+        "nextjs",
+        "tailwindcss",
+        "trpc",
+        "nextauth",
+        "prisma",
+        "postgress"
+      ],
+      "links": [
+        {
+          "title" : "Website",
+          "type": "url",
+          "data": "https://pictures-omega.vercel.app/"
+        },
+        {
+          "title": "Github",
+          "type": "icon",
+          "data": "https://github.com/DiegoCadavid/pictures",
+          "icon": "/icons/github.png"
+        }
+      ]
+    }
+  ]
+}

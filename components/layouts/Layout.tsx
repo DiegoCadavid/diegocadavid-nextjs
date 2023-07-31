@@ -22,8 +22,8 @@ const Layout = ({ children }: Props) => {
           alt=""
           className="w-24 h-24 rounded-lg"
         />
-        <div className="flex flex-col items-center max-w-md px-4 text-sm text-center text-zinc-400">
-          <h1 className="text-xl font-bold text-zinc-300">DiegoCadavid</h1>
+        <div className="flex flex-col items-center max-w-md px-4 text-sm text-center dark:text-zinc-400">
+          <h1 className="text-xl font-bold dark:text-zinc-300">DiegoCadavid</h1>
           <p className="mt-2 ">✨ NextJS Frontend | 🤖 C#/Nodejs Backend</p>
           <p className="mt-2">
             I am student of Colombia. I really love create cool sites and copy
@@ -39,7 +39,7 @@ const Layout = ({ children }: Props) => {
           <div className="hidden top-8 xl:block">
             <AboutCard />
             <p className="hidden mt-4 text-sm text-zinc-400 dark:text-zinc-600 xl:block">
-              DiegoCadavid (c) 2018. Thanks to my family for supporting me in
+              <span className="font-semibold">SITE IN DEVELOPMENT</span> | DiegoCadavid (c) 2018. Thanks to my family for supporting me in
               what I love, they are my greatest privilege.
             </p>
           </div>

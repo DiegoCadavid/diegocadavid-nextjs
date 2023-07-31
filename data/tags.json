@@ -1,0 +1,29 @@
+{
+  "data": {
+    "DEFAULT": {
+      "title": "",
+      "color": "#7D7D7D"
+    },
+    "javascript": {
+      "title" : "JavaScript",
+      "color" : "#FFCD2A"
+    },
+    "typescript" : {
+      "title" : "TypeScript",
+      "color" : "#4680FE"
+    },
+    "csharp" : {
+      "title" : "C#",
+      "color" : "#8229DB"
+    },
+    "react": {
+      "title": "React",
+      "color": "#32D3DF"
+      
+    },
+    "nextjs" : {
+      "title": "Nextjs",
+      "color" : "#7D7D7D"
+    }
+  }
+}

@@ -1,14 +1,13 @@
 import Layout from "../components/layouts/Layout"
 
-
 interface Props {}
 
-const aboutme = ({}: Props) => {
+const playlists = ({}: Props) => {
   return (
     <Layout>
-      <p>About me</p>
+      <p>Playlists</p>
     </Layout>
   )
 }
 
-export default aboutme
+export default playlists

@@ -1,15 +1,33 @@
 import Link from "next/link";
+import { GetStaticProps } from "next";
 import Layout from "../components/layouts/Layout";
 import ProjectItem from "../components/pages/projects/ProjectItem";
 
-interface Props {}
+import formatProjects from "../helpers/formatProjects";
 
-const homePage = ({}: Props) => {
+import projectsData from "../data/projects.json";
+import tagsData from "../data/tags.json";
+import { ProjectWithTags, Projects } from "../types/data";
+
+interface Props {
+  projects: ProjectWithTags[];
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const projects = formatProjects(projectsData as Projects, tagsData);
+  return {
+    props: {
+      projects,
+    },
+  };
+};
+
+const homePage = ({ projects }: Props) => {
   return (
     <Layout>
-      <div className="grid gap-6 pb-8 mt-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 2xl:grid-cols-3">
-        {[...new Array(5)].map((_, i) => {
-          return <ProjectItem key={i} />;
+      <div className="grid gap-6 pb-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 2xl:grid-cols-3">
+        {projects.map((project) => {
+          return <ProjectItem key={project.name} {...project} />;
         })}
       </div>
     </Layout>
