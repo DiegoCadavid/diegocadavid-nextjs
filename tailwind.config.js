@@ -5,6 +5,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -19,6 +20,24 @@ module.exports = {
           800: "#626164",
           900: "#313032"
         },
+        background: {
+          200: "#EAEAEA",
+          300: "#F6F3F3",
+          400: "#FFFFFF",
+          500: "#FFFFFF"
+        },
+        "background-dark" : {
+          200: "#2E2E2E",
+          300: "#272626",
+          400: "#1C1C1C",
+          500: "#161616"
+        },
+        "stroke" : {
+          500 : "#E3E3E3"
+        },
+        "stroke-dark": {
+          500: "#272626"
+        }
       },
       fontFamily: {
         primary: ["Inter", "sans-serif"],

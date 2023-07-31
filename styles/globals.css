@@ -5,20 +5,19 @@
 @layer components {
   /* Buttons */
   .btn {
-    @apply py-2 px-6;
+    @apply px-6 py-2;
     @apply flex justify-center gap-2;
 
-    @apply items-center font-medium text-center text-white;
-    @apply bg-black hover:bg-zinc-800;
-    @apply border-2 border-black rounded-full hover:border-black;
-
-    @apply transition-colors ease-in;
+    @apply text-black; 
+    @apply bg-zinc-300; 
+    @apply rounded-full;
+   
   }
 
   .btn-outline {
-    @apply bg-primary-500 hover:bg-black;
-    @apply text-black hover:text-white;
-    
+    @apply bg-transparent;
+    @apply border border-zinc-700;
+    @apply text-zinc-300;
   }
 
   .btn-icon {
@@ -27,7 +26,7 @@
 
   /* Text style */
   .heading-1 {
-    @apply md:text-4xl text-2xl; 
+    @apply text-2xl md:text-4xl; 
     @apply font-bold; 
     @apply uppercase; 
   }
@@ -35,11 +34,25 @@
 
 @layer base {
   * {
-    @apply cursor-none;
+    /* @apply cursor-none; */
     @apply font-primary;
   }
 
   body {
-    @apply bg-primary-500 ;
+    @apply dark:bg-background-dark-500 dark:text-zinc-300;
   };
+
+  .scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    @apply bg-transparent;
+    @apply h-2;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-background-dark-200;
+    @apply rounded-full;
+  } 
 }
