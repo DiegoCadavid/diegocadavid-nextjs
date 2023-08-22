@@ -10,23 +10,27 @@ import tagsData from "../data/tags.json";
 import { ProjectWithTags, Projects } from "../types/data";
 
 interface Props {
-
+  projects: ProjectWithTags[];
 }
 
-// export const getStaticProps: GetStaticProps = async () => {
-//   const projects = formatProjects(projectsData as Projects, tagsData);
-//   return {
-//     props: {
-//       projects,
-//     },
-//   };
-// };
+export const getStaticProps: GetStaticProps = async () => {
+  const projects = formatProjects(projectsData as Projects, tagsData);
+  return {
+    props: {
+      projects,
+    },
+  };
+};
 
-const homePage = ({ }: Props) => {
+const homePage = ({ projects }: Props) => {
   return (
-    <div className="flex items-center justify-center min-h-screen text-2xl font-semibold">
-      In development
-    </div>
+    <Layout>
+      <div className="grid gap-6 pb-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 2xl:grid-cols-3">
+        {projects.map((project) => {
+          return <ProjectItem key={project.name} {...project} />;
+        })}
+      </div>
+    </Layout>
   );
 };
 

@@ -17,14 +17,14 @@ const AboutCard = ({}: Props) => {
           Spotify and more!{" "}
         </p>
         <p className="mt-2">
-          I'm have 16 years old now, i like the anime/games (waited for Blue
+          i like the anime/games (waited for Blue
           Protocol Global)
         </p>
 
         <AboutCardStats />
 
-        <h2 className="mt-4 font-semibold">Languages and Frameworks</h2>
-       <AboutCardTags />
+        {/* <h2 className="mt-4 font-semibold">Languages and Frameworks</h2> */}
+       {/* <AboutCardTags /> */}
       </div>
     </div>
   );
