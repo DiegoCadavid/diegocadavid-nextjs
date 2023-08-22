@@ -39,7 +39,9 @@ const Layout = ({ children }: Props) => {
           <div className="hidden top-8 xl:block">
             <AboutCard />
             <p className="hidden mt-4 text-sm text-zinc-400 dark:text-zinc-600 xl:block">
-              <span className="font-semibold">SITE IN DEVELOPMENT</span> | DiegoCadavid (c) 2018. Thanks to all those who have supported me so far. 
+              <span className="font-semibold">SITE IN DEVELOPMENT</span> |
+              DiegoCadavid (c) 2018. Thanks to Nicole and my family for
+              supporting me, without them this would not have been possible.
             </p>
           </div>
         </div>

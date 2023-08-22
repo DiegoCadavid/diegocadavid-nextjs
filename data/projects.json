@@ -27,6 +27,34 @@
           "icon": "/icons/github.png"
         }
       ]
+    },
+    {
+      "image": "https://pictures-omega.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdd4p0ksdu%2Fimage%2Fupload%2Fv1690841349%2Ftbg9cldebnynutyejfrj.png&w=1920&q=75",
+      "name": "Dodo",
+      "description": "Dodo is a clone of Twitter, Created using t3-app",
+      "tags": [
+        "typescript",
+        "react",
+        "nextjs",
+        "tailwindcss",
+        "trpc",
+        "nextauth",
+        "prisma",
+        "postgress"
+      ],
+      "links": [
+        {
+          "title" : "Website",
+          "type": "url",
+          "data": "https://dodo-coral.vercel.app/"
+        },
+        {
+          "title": "Github",
+          "type": "icon",
+          "data": "hhttps://github.com/DiegoCadavid/dodo",
+          "icon": "/icons/github.png"
+        }
+      ]
     }
   ]
 }

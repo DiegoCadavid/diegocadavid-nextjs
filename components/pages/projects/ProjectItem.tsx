@@ -5,19 +5,21 @@ interface Props extends ProjectWithTags {}
 
 const ProjectItem = ({ image, name, description, tags, links }: Props) => {
   return (
-    <div className="overflow-hidden transition-transform ease-out border rounded-lg border-stroke-500 bg-background-400 dark:border-stroke-dark-500 dark:bg-background-dark-400 ">
+    <div className="flex flex-col overflow-hidden transition-transform ease-out border rounded-lg border-stroke-500 bg-background-400 dark:border-stroke-dark-500 dark:bg-background-dark-400">
       <img src={image} alt={`${name} image`} className="" />
 
-      <div className="p-2">
-        <h3 className="mt-2 font-bold">{name}</h3>
-        <p className="mt-2 text-zinc-400">{description}</p>
+      <div className="flex flex-col flex-grow gap-2 p-2">
+        <h3 className="mt-2 text-lg font-bold">{name}</h3>
+        <p className="flex-grow overflow-auto scrollbar max-h-16 text-zinc-400">
+          {description}
+        </p>
 
-        <div className="flex flex-wrap gap-2 mt-2 text-sm">
+        <div className="flex gap-2 py-2 overflow-auto scrollbar">
           {tags.map((tag) => {
             return (
               <div
                 key={tag.title}
-                className="px-2 py-1 border rounded-full"
+                className="px-2 py-1 text-sm border rounded-full"
                 style={{
                   borderColor: tag.color,
                   color: tag.color,
@@ -28,7 +30,7 @@ const ProjectItem = ({ image, name, description, tags, links }: Props) => {
           })}
         </div>
 
-        <div className="flex gap-2 mt-4 ">
+        <div className="flex gap-2 mt-2">
           {links.map((link, i) => {
             if (link.type === "icon") {
               return (
